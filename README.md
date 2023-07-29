@@ -26,12 +26,17 @@ Example Playbook
 
 Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
 
-    cat configure-repo.yml
+    $ cat configure-repo.yml
     - hosts: client
       roles:
         - configure-http-repo
 
-    cat hosts
+    $ extra-vars.yml
+    ---
+    iso_path: /path/to/your/iso_file.iso
+
+
+    $ cat hosts
     [client]
     localhost   ansible_connection=local
 

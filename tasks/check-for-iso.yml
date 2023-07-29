@@ -1,7 +1,7 @@
 # Check if the ISO file exists
 - name: Check if ISO file exists
   stat:
-    path: /path/to/your/iso_file.iso
+    path: "{{ iso_path }}"
   register: iso_file_stat
 
 # Exit playbook if ISO file doesn't exist
