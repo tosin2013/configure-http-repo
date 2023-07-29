@@ -26,9 +26,19 @@ Example Playbook
 
 Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
 
-    - hosts: servers
+    cat configure-repo.yml
+    - hosts: client
       roles:
-         - { role: username.rolename, x: 42 }
+        - configure-http-repo
+
+    cat hosts
+    [client]
+    localhost   ansible_connection=local
+
+**Configure HTTPD Repo**
+```
+sudo ansible-playbook  -i hosts configure-repo.yml
+```
 
 License
 -------
