@@ -1,0 +1,5 @@
+---
+# defaults file for configure-http-repo
+iso_mount_path: /mnt/iso
+httpd_doc_root: /var/www/html
+yum_repo_name: my_yum_repo

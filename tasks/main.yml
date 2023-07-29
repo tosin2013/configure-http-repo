@@ -1,0 +1,4 @@
+---
+# tasks file for configure-http-repo
+- name: Check for ISO file
+  include_tasks: check-for-iso.yml
